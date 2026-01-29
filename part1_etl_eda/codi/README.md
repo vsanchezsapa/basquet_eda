@@ -1,4 +1,4 @@
-# codi/ — Creació de vistes MongoDB (FEB3)
+# Creació de vistes MongoDB (FEB3)
 
 Aquest directori conté **tot el codi necessari** perquè el professor pugui
 **copiar i enganxar directament a la shell de MongoDB (`mongosh`)** i recrear
