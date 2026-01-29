@@ -17,7 +17,7 @@ Aquesta selecció permet:
 
 📸 *Captura: definició de les temporades utilitzades*
 
-![Definició temporades](img/pas0_temporades.png)
+![Definició temporades](img/pas0_temporades.jpeg)
 
 ---
 
