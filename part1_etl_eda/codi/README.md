@@ -56,13 +56,15 @@ CSV per al **Playbook 2 (Clustering)**.
 ## ▶️ Com executar el codi (pas a pas)
 
 ### 0️⃣ Entrar a la base de dades
-```js
+```
 use feb_db
-
+```
 ### Definir les temporades a analitzar
+```
 const SEASONS = ["2025", "2024-2025", "2023-2024"];
-
+```
 ### Vista 1 — Shots nets (3 temporades)
+```
 db.createView(
   "vw_FEB3_shots_clean_3y",
   "FEB3_players_shots",
@@ -103,8 +105,9 @@ db.createView(
   ]
 )
 
-
+```
 ### Vista 2 — Estadístiques jugador-partit netes
+```
 db.createView(
   "vw_FEB3_players_stats_clean_3y",
   "FEB3_players_statistics",
@@ -148,8 +151,9 @@ db.createView(
   ]
 )
 
-
+```
 ### Vista 3 — Vista final agregada (base EDA + ML)
+```
 db.createView(
   "vw_FEB3_players_base_3y",
   "vw_FEB3_players_stats_clean_3y",
