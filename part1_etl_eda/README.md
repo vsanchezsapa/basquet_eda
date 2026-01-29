@@ -1,7 +1,5 @@
 # PART 1 – ETL i EDA
 
-# PART 1 – ETL i EDA
-
 En aquesta primera part del projecte es realitza tot el procés d’extracció, neteja i preparació de les dades a partir d’una base de dades MongoDB, amb l’objectiu d’obtenir un dataset final preparat per a tècniques de Machine Learning.
 
 Les dades corresponen a estadístiques de jugadors de la competició FEB3 / Liga EBA.
@@ -18,6 +16,8 @@ Aquesta selecció permet:
 - Garantir coherència en totes les vistes creades posteriorment
 
 📸 *Captura: definició de les temporades utilitzades*
+
+![Definició temporades](img/pas0_temporades.png)
 
 ---
 
@@ -48,7 +48,11 @@ Crear una vista amb tots els tirs realitzats a FEB3 durant les temporades selecc
 - **$match final**  
   Comprovació final per assegurar que totes les dades compleixen els criteris definits.
 
-📸 *Captura: vista de tirs neta generada*
+📸 *Captures: vista de tirs neta i comprovació de dades*
+
+![Vista tirs neta](img/pas1_vista_tirs.png)
+
+![Comprovació vista tirs](img/pas1_comprovacio_tirs.png)
 
 ---
 
@@ -74,7 +78,11 @@ Crear una vista amb les estadístiques reals dels jugadors en els partits disput
   - El clustering
   - La creació de noves mètriques
 
-📸 *Captura: vista d’estadístiques jugador-partit*
+📸 *Captures: vista d’estadístiques jugador-partit i comprovació*
+
+![Vista estadístiques jugador-partit](img/pas2_vista_stats.png)
+
+![Comprovació vista estadístiques](img/pas2_comprovacio_stats.png)
 
 ---
 
@@ -95,6 +103,8 @@ Obtenir un dataset final a nivell de jugador, amb una fila per jugador i tempora
 El resultat és un **dataset final net, coherent i preparat per EDA, escalat i entrenament de models**.
 
 📸 *Captura: dataset final obtingut*
+
+![Dataset final agregat](img/pas3_dataset_final.png)
 
 ---
 
