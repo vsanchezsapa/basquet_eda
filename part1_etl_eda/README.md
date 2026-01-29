@@ -15,8 +15,6 @@ Aquesta selecció permet:
 - Treballar només amb informació actual
 - Garantir coherència en totes les vistes creades posteriorment
 
-📸 *Captura: definició de les temporades utilitzades*
-
 ![Definició temporades](img/pas0_temporades.jpeg)
 
 ---
@@ -48,11 +46,9 @@ Crear una vista amb tots els tirs realitzats a FEB3 durant les temporades selecc
 - **$match final**  
   Comprovació final per assegurar que totes les dades compleixen els criteris definits.
 
-📸 *Captures: vista de tirs neta i comprovació de dades*
+![Vista tirs neta](img/pas1_vista_tirs.jpeg)
 
-![Vista tirs neta](img/pas1_vista_tirs.png)
-
-![Comprovació vista tirs](img/pas1_comprovacio_tirs.png)
+![Comprovació vista tirs](img/pas1_comprovacio_tirs.jpeg)
 
 ---
 
@@ -78,11 +74,9 @@ Crear una vista amb les estadístiques reals dels jugadors en els partits disput
   - El clustering
   - La creació de noves mètriques
 
-📸 *Captures: vista d’estadístiques jugador-partit i comprovació*
+![Vista estadístiques jugador-partit](img/pas2_vista_stats.jpeg)
 
-![Vista estadístiques jugador-partit](img/pas2_vista_stats.png)
-
-![Comprovació vista estadístiques](img/pas2_comprovacio_stats.png)
+![Comprovació vista estadístiques](img/pas2_comprovacio_stats.jpeg)
 
 ---
 
@@ -102,9 +96,7 @@ Obtenir un dataset final a nivell de jugador, amb una fila per jugador i tempora
 
 El resultat és un **dataset final net, coherent i preparat per EDA, escalat i entrenament de models**.
 
-📸 *Captura: dataset final obtingut*
-
-![Dataset final agregat](img/pas3_dataset_final.png)
+![Dataset final agregat](img/pas3_dataset_final.jpeg)
 
 ---
 
