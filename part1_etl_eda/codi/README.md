@@ -59,11 +59,11 @@ CSV per al **Playbook 2 (Clustering)**.
 ```
 use feb_db
 ```
-### Definir les temporades a analitzar
+### 1️⃣ Definir les temporades a analitzar
 ```
 const SEASONS = ["2025", "2024-2025", "2023-2024"];
 ```
-### Vista 1 — Shots nets (3 temporades)
+### 1️⃣ Vista 1 — Tirs nets (3 temporades)
 ```
 db.createView(
   "vw_FEB3_shots_clean_3y",
@@ -106,7 +106,7 @@ db.createView(
 )
 
 ```
-### Vista 2 — Estadístiques jugador-partit netes
+### 2️⃣ Vista 2 — Estadístiques jugador-partit netes
 ```
 db.createView(
   "vw_FEB3_players_stats_clean_3y",
@@ -152,7 +152,7 @@ db.createView(
 )
 
 ```
-### Vista 3 — Vista final agregada (base EDA + ML)
+### 3️⃣ Vista 3 — Vista final agregada (base EDA + ML)
 ```
 db.createView(
   "vw_FEB3_players_base_3y",
