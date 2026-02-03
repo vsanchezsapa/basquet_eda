@@ -54,7 +54,9 @@ Finalment, es comprova que la base de dades s’ha restaurat correctament mitjan
 
 ![Verificació base de dades](img/env_mongo_verify.png)
 
-## PAS 0 — Definició de les temporades
+Un cop l’entorn està preparat i la base de dades restaurada correctament, es procedeix a la creació de les vistes necessàries per al procés d’ETL i EDA.
+
+## 🟦 PAS 0 — Definició de les temporades
 
 En primer lloc es defineix una constant amb les temporades més recents disponibles per a la competició FEB3.
 
@@ -67,7 +69,7 @@ Aquesta selecció permet:
 
 ---
 
-## PAS 1 — Vista de tirs neta
+## 🟦 PAS 1 — Vista de tirs neta
 
 ### Objectiu
 Crear una vista amb tots els tirs realitzats a FEB3 durant les temporades seleccionades, amb els camps normalitzats i preparats per a l’anàlisi exploratòria (EDA).
@@ -100,7 +102,7 @@ Crear una vista amb tots els tirs realitzats a FEB3 durant les temporades selecc
 
 ---
 
-## PAS 2 — Vista d’estadístiques jugador-partit neta
+## 🟦 PAS 2 — Vista d’estadístiques jugador-partit neta
 
 ### Objectiu
 Crear una vista amb les estadístiques reals dels jugadors en els partits disputats, preparada per ser agregada posteriorment a nivell de jugador.
@@ -128,7 +130,7 @@ Crear una vista amb les estadístiques reals dels jugadors en els partits disput
 
 ---
 
-## PAS 3 — Vista final agregada per jugador
+## 🟦 PAS 3 — Vista final agregada per jugador
 
 ### Objectiu
 Obtenir un dataset final a nivell de jugador, amb una fila per jugador i temporada.
