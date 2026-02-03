@@ -10,9 +10,15 @@ Les dades corresponen a estadístiques de jugadors de la competició FEB3 / Liga
 
 Abans d’iniciar el procés d’ETL i EDA, s’ha preparat un entorn MongoDB utilitzant Docker en un servidor Debian, amb l’objectiu de disposar d’una base de dades reproduïble i independent de l’entorn local.
 
+---
+
 ### Transferència del backup al servidor
 
 El fitxer de backup de la base de dades FEB (`.archive`) s’ha transferit prèviament al servidor Debian mitjançant **WinSCP**, assegurant que el fitxer estigui disponible localment abans de la restauració.
+
+![Backup present al servidor](img/env_backup_present.png)
+
+---
 
 ### Creació del contenidor MongoDB
 
@@ -20,19 +26,33 @@ S’ha utilitzat la imatge oficial de MongoDB descarregada des de Docker Hub. A 
 
 Un cop creat, es comprova que el contenidor està actiu i en execució correctament.
 
+![Contenidor MongoDB actiu](img/env_docker_ps.png)
+
+---
+
 ### Còpia del backup dins del contenidor
 
 El fitxer `.archive` amb les dades de FEB es copia a l’interior del contenidor MongoDB, garantint que el backup sigui accessible des del sistema intern del contenidor.
 
 Un cop copiat, es verifica la presència del fitxer dins del contenidor.
 
+![Backup dins del contenidor](img/env_backup_in_container.png)
+
+---
+
 ### Restauració de la base de dades
 
 Amb el fitxer ja disponible dins del contenidor, es procedeix a restaurar la base de dades mitjançant l’eina `mongorestore`, carregant totes les col·leccions necessàries a la base de dades `feb_db`.
 
+![mongorestore correcte](img/env_mongorestore_ok.png)
+
+---
+
 ### Verificació de la càrrega de dades
 
 Finalment, es comprova que la base de dades s’ha restaurat correctament mitjançant consultes bàsiques amb `mongosh`, assegurant que les col·leccions i registres estan disponibles abans de continuar amb la creació de vistes i l’EDA.
+
+![Verificació base de dades](img/env_mongo_verify.png)
 
 ## PAS 0 — Definició de les temporades
 
