@@ -16,7 +16,7 @@ Abans d’iniciar el procés d’ETL i EDA, s’ha preparat un entorn MongoDB ut
 
 El fitxer de backup de la base de dades FEB (`.archive`) s’ha transferit prèviament al servidor Debian mitjançant **WinSCP**, assegurant que el fitxer estigui disponible localment abans de la restauració.
 
-![Backup present al servidor](img/env_backup_present.png)
+![Backup present al servidor](img/env_backup_transfer.png)
 
 ---
 
@@ -26,7 +26,7 @@ S’ha utilitzat la imatge oficial de MongoDB descarregada des de Docker Hub. A 
 
 Un cop creat, es comprova que el contenidor està actiu i en execució correctament.
 
-![Contenidor MongoDB actiu](img/env_docker_ps.png)
+![Contenidor MongoDB actiu](img/env_docker_mongo.png)
 
 ---
 
@@ -36,7 +36,7 @@ El fitxer `.archive` amb les dades de FEB es copia a l’interior del contenidor
 
 Un cop copiat, es verifica la presència del fitxer dins del contenidor.
 
-![Backup dins del contenidor](img/env_backup_in_container.png)
+![Backup dins del contenidor](img/env_backup_container.png)
 
 ---
 
@@ -44,7 +44,7 @@ Un cop copiat, es verifica la presència del fitxer dins del contenidor.
 
 Amb el fitxer ja disponible dins del contenidor, es procedeix a restaurar la base de dades mitjançant l’eina `mongorestore`, carregant totes les col·leccions necessàries a la base de dades `feb_db`.
 
-![mongorestore correcte](img/env_mongorestore_ok.png)
+![mongorestore correcte](img/env_mongorestore.png)
 
 ---
 
