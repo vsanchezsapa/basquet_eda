@@ -6,6 +6,34 @@ Les dades corresponen a estadístiques de jugadors de la competició FEB3 / Liga
 
 ---
 
+## Preparació de l’entorn i càrrega de dades
+
+Abans d’iniciar el procés d’ETL i EDA, s’ha preparat un entorn MongoDB utilitzant Docker en un servidor Debian, amb l’objectiu de disposar d’una base de dades reproduïble i independent de l’entorn local.
+
+### Transferència del backup al servidor
+
+El fitxer de backup de la base de dades FEB (`.archive`) s’ha transferit prèviament al servidor Debian mitjançant **WinSCP**, assegurant que el fitxer estigui disponible localment abans de la restauració.
+
+### Creació del contenidor MongoDB
+
+S’ha utilitzat la imatge oficial de MongoDB descarregada des de Docker Hub. A continuació, s’ha creat i executat un contenidor MongoDB exposant el port corresponent per permetre connexions externes.
+
+Un cop creat, es comprova que el contenidor està actiu i en execució correctament.
+
+### Còpia del backup dins del contenidor
+
+El fitxer `.archive` amb les dades de FEB es copia a l’interior del contenidor MongoDB, garantint que el backup sigui accessible des del sistema intern del contenidor.
+
+Un cop copiat, es verifica la presència del fitxer dins del contenidor.
+
+### Restauració de la base de dades
+
+Amb el fitxer ja disponible dins del contenidor, es procedeix a restaurar la base de dades mitjançant l’eina `mongorestore`, carregant totes les col·leccions necessàries a la base de dades `feb_db`.
+
+### Verificació de la càrrega de dades
+
+Finalment, es comprova que la base de dades s’ha restaurat correctament mitjançant consultes bàsiques amb `mongosh`, assegurant que les col·leccions i registres estan disponibles abans de continuar amb la creació de vistes i l’EDA.
+
 ## PAS 0 — Definició de les temporades
 
 En primer lloc es defineix una constant amb les temporades més recents disponibles per a la competició FEB3.
