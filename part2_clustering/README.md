@@ -43,7 +43,7 @@ Un cop entrenat el model:
 - Es genera un dataset final amb la informació del clúster associat a cada jugador
 - S’assignen noms esportius als clústers segons les seves característiques predominants
 
-Aquest dataset s’utilitza posteriorment per a l’anàlisi i visualització a Power BI.
+Aquest dataset s’utilitza posteriorment per a l’anàlisi i visualització a un altre playbook a la plart 3.
 
 ---
 
