@@ -67,11 +67,18 @@ Per aquest motiu, s’ha optat per *k = 2* com a configuració final, ja que per
 
 ## 🏷️ Criteris d’assignació dels perfils de jugador
 
-Els noms assignats als clústers no corresponen a posicions fixes de joc, sinó a perfils obtinguts a partir de les estadístiques analitzades.
 
-El clúster identificat com a **jugadors físics** es caracteritza principalment per valors elevats en minuts jugats, rebots i ús del tir de dos punts, indicant una presència constant a pista i un joc proper a cistella.
+- **Jugadors físics**
+  - Valors elevats en minuts jugats
+  - Major nombre de rebots per partit
+  - Ús predominant del tir de dos punts
+  - Presència constant a pista i joc proper a cistella
 
-D’altra banda, el clúster de **jugadors equilibrats** presenta valors més repartits entre les diferents variables, amb una participació menys dominant en una sola faceta del joc, però amb aportacions en diversos aspectes.
+- **Jugadors equilibrats**
+  - Valors més repartits entre les diferents variables
+  - Participació en diverses facetes del joc (rebot, assistències, tir)
+  - Absència d’una estadística clarament dominant
+  - Perfil polivalent i adaptable
 
 
 ## ➡️ Connexió amb la Part 3
