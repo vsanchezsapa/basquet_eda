@@ -150,6 +150,14 @@ El resultat és un **dataset final net, coherent i preparat per EDA, escalat i e
 
 ---
 
+## 📓 Playbook ETL i EDA
+
+Tot el procés descrit en aquesta secció es pot consultar i executar al notebook:
+
+- `FEB3_Part1.ipynb`
+
+Aquest playbook conté el codi complet de connexió a MongoDB, creació de vistes, neteja de dades i anàlisi exploratòria, i constitueix la base de dades utilitzada a la Part 2 del projecte.
+
 ## Resultat final
 
 El procés ETL finalitza amb la generació d’un dataset estructurat a nivell de jugador, que serveix com a base per a la fase de clustering de la Part 2 del projecte.
