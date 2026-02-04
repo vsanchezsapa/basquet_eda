@@ -54,7 +54,6 @@ Tot el procés descrit en aquesta part es pot consultar i executar al notebook:
 - `FEB3_Part2.ipynb`
 
 ---
----
 
 ## 🔍 Comparació entre diferents valors de k
 
@@ -63,6 +62,16 @@ Durant el procés de clustering s’han provat diferents valors del nombre de cl
 Amb *k = 4* s’obtenen subperfils més detallats, com ara jugadors interiors més ofensius o exteriors amb major ús del tir de tres punts. Tot i això, alguns d’aquests clústers presenten comportaments similars i una separació menys clara entre grups.
 
 Per aquest motiu, s’ha optat per *k = 2* com a configuració final, ja que permet identificar dos grans perfils de jugador de manera més clara, coherent i fàcil d’interpretar.
+
+---
+
+## 🏷️ Criteris d’assignació dels perfils de jugador
+
+Els noms assignats als clústers no corresponen a posicions fixes de joc, sinó a perfils obtinguts a partir de les estadístiques analitzades.
+
+El clúster identificat com a **jugadors físics** es caracteritza principalment per valors elevats en minuts jugats, rebots i ús del tir de dos punts, indicant una presència constant a pista i un joc proper a cistella.
+
+D’altra banda, el clúster de **jugadors equilibrats** presenta valors més repartits entre les diferents variables, amb una participació menys dominant en una sola faceta del joc, però amb aportacions en diversos aspectes.
 
 
 ## ➡️ Connexió amb la Part 3
