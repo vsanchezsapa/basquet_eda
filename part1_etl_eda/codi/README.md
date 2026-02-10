@@ -48,7 +48,7 @@ Vista **final agregada**:
 - Percentatges de tir
 - Filtrat de jugadors amb suficients partits
 
-👉 Aquesta és la vista que es carrega a Python per fer l’EDA final i generar el
+ Aquesta és la vista que es carrega a Python per fer l’EDA final i generar el
 CSV per al **Playbook 2 (Clustering)**.
 
 ---
