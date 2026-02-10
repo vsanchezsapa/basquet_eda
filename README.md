@@ -79,5 +79,4 @@ Resultat: una interpretació clara i visual dels diferents tipus de jugadors ide
 ---
 
 ## Autor
-
-Projecte realitzat com a part d’un treball acadèmic de Big Data / Intel·ligència Artificial, utilitzant dades reals de competicions de bàsquet de la FEB.
+Projecte realitzat per **Adria Lopez** i **Valentín Sánchez**, estudiants de l’**Institut Sa Palomera**
