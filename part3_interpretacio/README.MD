@@ -1,42 +1,50 @@
 # PART 3 – Interpretació i visualització dels resultats
 
-En aquesta tercera part del projecte s’analitzen i interpreten els resultats obtinguts a partir del procés de clustering realitzat a la Part 2. L’objectiu és entendre els diferents perfils de jugador identificats i comunicar els resultats de manera clara.
+En aquesta tercera part del projecte s’analitzen i interpreten els resultats obtinguts a partir del procés de clustering realitzat a la Part 2. L’objectiu és entendre els diferents perfils de jugador identificats i comunicar els resultats de manera clara mitjançant visualitzacions.
 
-La visualització de les dades no es realitza mitjançant notebooks, sinó utilitzant **Power BI**, per facilitar l’anàlisi visual i la comparació entre clústers.
-
----
-
-## 📥 Dataset utilitzat
-
-Per a la visualització i anàlisi s’utilitza el dataset generat a la Part 2 del projecte:
-
-- Fitxer: `output_clustering_powerbi.csv`
-
-Aquest fitxer conté les estadístiques de cada jugador juntament amb el clúster assignat i el nom del perfil esportiu.
+En aquesta fase s’utilitzen eines de visualització en Python dins de Jupyter Notebook, que permeten analitzar les diferències entre clústers i facilitar la interpretació esportiva dels resultats.
 
 ---
 
-## 📊 Visualització amb Power BI
+## Dataset utilitzat
 
-Power BI s’utilitza per crear diferents visualitzacions que permeten analitzar els clústers de manera intuitiva, com ara:
+Per a la visualització i l’anàlisi s’utilitza el dataset final generat a la Part 2 del projecte:
 
-- Distribució de jugadors per clúster
-- Comparació de mitjanes estadístiques entre clústers
-- Anàlisi del perfil de jugador segons minuts, tirs, rebots o assistències
-- Filtres per clúster i variables principals
+- Fitxer: `FEB3_players_clustered_k6.csv`
 
-Aquestes visualitzacions permeten identificar patrons i diferències clares entre els perfils de jugador obtinguts amb el clustering.
+Aquest fitxer conté les estadístiques agregades de cada jugador, el clúster assignat i el nom del perfil esportiu associat.
 
 ---
 
-## 🧠 Interpretació dels resultats
+## Visualització dels resultats
 
-A partir de les visualitzacions generades a Power BI, s’analitzen les característiques principals de cada clúster, identificant els rols predominants i les diferències més rellevants entre grups.
+Per analitzar els clústers obtinguts s’han utilitzat diferents tipus de visualitzacions:
 
-Els resultats obtinguts confirmen que el procés de clustering permet agrupar els jugadors en perfils coherents segons el seu rendiment i estil de joc.
+- Distribució de jugadors per clúster mitjançant gràfiques de barres  
+- Comparació de mitjanes estadístiques entre clústers  
+- Boxplots per analitzar la distribució de variables clau dins de cada clúster  
+- Projecció en dues dimensions mitjançant PCA per visualitzar la separació entre clústers  
+
+Aquestes visualitzacions permeten comparar els perfils de jugador i detectar diferències clares en variables com les assistències, els rebots o l’ús del tir exterior.
 
 ---
 
-## 📌 Conclusions finals
+## Anàlisi i interpretació dels clústers
 
-La combinació de *Machine Learning* no supervisat i eines de visualització com Power BI permet obtenir una visió clara i entenedora dels diferents perfils de jugador, facilitant la interpretació dels resultats i la comunicació de les conclusions del projecte.
+A partir de les visualitzacions generades, s’analitzen les característiques principals de cada clúster, observant com varien les estadístiques entre perfils. Tot i que alguns clústers presenten cert solapament, s’identifiquen diferències consistents que permeten associar cada grup amb un tipus de jugador concret.
+
+La interpretació esportiva es basa en l’anàlisi de les mitjanes per clúster i en la comparació visual entre grups, fet que facilita la comprensió dels resultats obtinguts.
+
+---
+
+## Projecció en dues dimensions amb PCA
+
+La projecció mitjançant PCA permet representar els jugadors en un espai de dues dimensions, mantenint una part significativa de la variabilitat de les dades originals. Aquesta visualització ajuda a entendre com es distribueixen els clústers i a comprovar que el clustering capta diferències reals entre jugadors, tot i la presència de solapaments habituals en dades reals.
+
+---
+
+## Conclusions finals
+
+Les visualitzacions realitzades confirmen que el procés de clustering ha permès identificar diferents perfils de jugador de manera coherent. L’ús de gràfiques i projeccions facilita la interpretació dels resultats i permet comunicar de forma clara les diferències entre clústers.
+
+En conjunt, aquesta part del projecte demostra que les tècniques de *Machine Learning* no supervisat combinades amb una bona visualització són útils per analitzar dades esportives i extreure conclusions rellevants sobre els perfils de jugador.
