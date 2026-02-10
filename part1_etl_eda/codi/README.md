@@ -10,7 +10,7 @@ posteriorment, el clustering.
 
 ---
 
-## 🎯 Objectiu de les vistes
+##  Objectiu de les vistes
 Les vistes permeten:
 - Filtrar només **FEB3 (LIGA EBA)**  
 - Limitar-nos a **3 temporades concretes**
@@ -20,9 +20,9 @@ Les vistes permeten:
 
 ---
 
-## 📁 Vistes creades
+##  Vistes creades
 
-### 1️⃣ `vw_FEB3_shots_clean_3y`
+### 1️ `vw_FEB3_shots_clean_3y`
 Vista de **tirs (shots)** neta:
 - Coordenades (x, y)
 - Zona de pista
@@ -32,7 +32,7 @@ Utilitzada per EDA espacial i anàlisi de tirs.
 
 ---
 
-### 2️⃣ `vw_FEB3_players_stats_clean_3y`
+### `vw_FEB3_players_stats_clean_3y`
 Vista d’**estadístiques jugador–partit**:
 - Només jugadors amb minuts jugats
 - Conversió de minuts a minuts reals
@@ -41,7 +41,7 @@ Base per a l’agregació posterior.
 
 ---
 
-### 3️⃣ `vw_FEB3_players_base_3y`
+###  `vw_FEB3_players_base_3y`
 Vista **final agregada**:
 - 1 fila = 1 jugador + 1 temporada
 - Mitjanes per partit
@@ -53,17 +53,17 @@ CSV per al **Playbook 2 (Clustering)**.
 
 ---
 
-## ▶️ Com executar el codi (pas a pas)
+##  Com executar el codi (pas a pas)
 
-### 0️⃣ Entrar a la base de dades
+###  Entrar a la base de dades
 ```
 use feb_db
 ```
-### 1️⃣ Definir les temporades a analitzar
+###  Definir les temporades a analitzar
 ```
 const SEASONS = ["2025", "2024-2025", "2023-2024"];
 ```
-### 1️⃣ Vista 1 — Tirs nets (3 temporades)
+###  Vista 1 — Tirs nets (3 temporades)
 ```
 db.createView(
   "vw_FEB3_shots_clean_3y",
@@ -106,7 +106,7 @@ db.createView(
 )
 
 ```
-### 2️⃣ Vista 2 — Estadístiques jugador-partit netes
+###  Vista 2 — Estadístiques jugador-partit netes
 ```
 db.createView(
   "vw_FEB3_players_stats_clean_3y",
@@ -152,7 +152,7 @@ db.createView(
 )
 
 ```
-### 3️⃣ Vista 3 — Vista final agregada (base EDA + ML)
+###  Vista 3 — Vista final agregada (base EDA + ML)
 ```
 db.createView(
   "vw_FEB3_players_base_3y",
