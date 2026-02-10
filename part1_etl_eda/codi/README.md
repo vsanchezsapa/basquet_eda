@@ -1,9 +1,5 @@
 # Creació de vistes MongoDB (FEB3)
 
-Aquest directori conté **tot el codi necessari** perquè el professor pugui
-**copiar i enganxar directament a la shell de MongoDB (`mongosh`)** i recrear
-exactament les vistes utilitzades a la **Part 1 (ETL + EDA)** del projecte.
-
 L’objectiu és evitar exportacions massives a CSV i treballar amb **vistes netes**
 que permetin carregar les dades directament a Python per fer l’EDA i,
 posteriorment, el clustering.
