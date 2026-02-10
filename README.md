@@ -79,4 +79,4 @@ Resultat: una interpretació clara i visual dels diferents tipus de jugadors ide
 ---
 
 ## Autor
-Projecte realitzat per **Adria Lopez** i **Valentín Sánchez**, estudiants de l’**Institut Sa Palomera**
+Projecte realitzat per **Adrià López** i **Valentín Sánchez**, estudiants de l’**Institut Sa Palomera**
